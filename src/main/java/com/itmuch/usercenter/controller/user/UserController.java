@@ -43,7 +43,7 @@ public class UserController {
         Map<String, Object> userInfo = new HashMap<>(3);
         userInfo.put("id", 1);
         userInfo.put("wxNickname", "大目");
-        userInfo.put("role", "user");
+        userInfo.put("role", "admin");
         return this.jwtOperator.generateToken(userInfo);
     }
 
